@@ -42,10 +42,13 @@ python setup.py develop
 
 ## Visualization
 The images are from the AI-TOD v1/v2, and DOTA-v2 datasets. Note that the <font color=green>green box</font> denotes the True Positive, the <font color=red>red box</font> denotes the False Negative and the <font color=blue>blue box</font> denotes the False Positive predictions.
+
 **High-quality results**:
 ![demo image](figures/Fig5-0.png)
+
 **Effectiveness of INEN**:
 ![demo image](figures/Fig9.png)
+
 **Effectiveness of SWL**:
 ![demo image](figures/Fig10.png)
 
