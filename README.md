@@ -12,8 +12,6 @@ SWIN-TOD contains two main modules: Instance-level Neighboring Enhancement Netwo
 **Pipeline of network**:
 ![demo image](figures/Fig3.png)
 
-**Adjacency matrix**:
-![demo image](figures/Fig2.png)
 
 **INEN**:
 ![demo image](figures/Fig4.png)
