@@ -39,6 +39,17 @@ cd SWIN-TOD
 pip install -r requirements/build.txt
 python setup.py develop
 ```
+About YOLOv9 experiments:
+
+Note that the experiments of YOLOv9 is conducted on the [YOLOv9](https://github.com/WongKinYiu/yolov9)
+```
+# train yolov9 models
+python -m torch.distributed.launch --nproc_per_node 4 --master_port 9527 train_dual.py --workers 4 --device 0,1,2,3 --sync-bn --batch 4 --data data/aitodv1.yaml --img 800 --cfg models/detect/yolov9-c.yaml --weights '' --name yolov9-c --hyp hyp.scratch-high.yaml --min-items 0 --epochs 500 --close-mosaic 15
+# val
+python val.py --data data/aitod.yaml --img 800 --batch 32 --conf 0.001 --iou 0.7 --device 0 --weights 'path/to/your weights (e.g. best.pt)' --save-json --name yolov9_c_c_800_val
+
+```
+
 
 ## Visualization
 The images are from the AI-TOD v1/v2, and DOTA-v2 datasets. Note that the <font color=green>green box</font> denotes the True Positive, the <font color=red>red box</font> denotes the False Negative and the <font color=blue>blue box</font> denotes the False Positive predictions.
