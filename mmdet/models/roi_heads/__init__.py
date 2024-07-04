@@ -21,6 +21,9 @@ from .shared_heads import ResLayer
 from .sparse_roi_head import SparseRoIHead
 from .standard_roi_head import StandardRoIHead
 from .trident_roi_head import TridentRoIHead
+from .cascade_gcn_roi_head import CascadeGcnRoIHead
+from .cascade_gat_roi_head import CascadeGatRoIHead
+from .cascade_gatv2_roi_head import CascadeGatv2RoIHead
 
 
 __all__ = [
@@ -33,5 +36,5 @@ __all__ = [
     'SingleRoIExtractor', 'PISARoIHead', 'PointRendRoIHead', 'MaskPointHead',
     'CoarseMaskHead', 'DynamicRoIHead', 'SparseRoIHead', 'TridentRoIHead',
     'SCNetRoIHead', 'SCNetMaskHead', 'SCNetSemanticHead', 'SCNetBBoxHead',
-    'FeatureRelayHead', 'GlobalContextHead'
+    'FeatureRelayHead', 'GlobalContextHead','CascadeGcnRoIHead','CascadeGatRoIHead','CascadeGatv2RoIHead'
 ]
