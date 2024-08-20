@@ -25,6 +25,7 @@ Required environments:
 * PyTorch 1.3+
 * CUDA 9.2+
 * GCC 5+
+* Pyg
 * [MMCV](https://mmcv.readthedocs.io/en/latest/#installation)
 * [cocoapi-aitod](https://github.com/jwwangchn/cocoapi-aitod)
 
@@ -38,6 +39,11 @@ git clone https://github.com/sevenwgb/SWIN-TOD.git
 cd SWIN-TOD
 pip install -r requirements/build.txt
 python setup.py develop
+
+NEW!!!
+For YOLO series, such [YOLOv5](https://github.com/ultralytics/yolov5)  [YOLOv9](https://github.com/WongKinYiu/yolov9)
+The newly added "ForYOLO" folder can be used to embed SWIN into the YOLO framework. Simply add or replace the code in this folder with the official YOLO code.
+
 ```
 About YOLOv9 experiments:
 
