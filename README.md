@@ -40,12 +40,13 @@ cd SWIN-TOD
 pip install -r requirements/build.txt
 python setup.py develop
 
-```NEW!!!
-For YOLO series, such [YOLOv5](https://github.com/ultralytics/yolov5)  [YOLOv9](https://github.com/WongKinYiu/yolov9)
-The newly added "ForYOLO" folder can be used to embed SWIN into the YOLO framework. Simply add or replace the code in this folder with the official YOLO code.
 ```
 
-```
+NEW!!!
+For YOLO series, such [YOLOv5](https://github.com/ultralytics/yolov5)  [YOLOv9](https://github.com/WongKinYiu/yolov9)
+The newly added "ForYOLO" folder can be used to embed SWIN into the YOLO framework. Simply add or replace the code in this folder with the official YOLO code.
+
+
 About YOLOv9 experiments:
 
 Note that the experiments of YOLOv9 is conducted on the [YOLOv9](https://github.com/WongKinYiu/yolov9)
